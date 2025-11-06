@@ -6,7 +6,7 @@ app = Flask(__name__)
 def add_numbers():
     return """
     <form method='GET'>
-        <input name='num1' placeholder='Enter first number'/>
+        <input name='num1' placeholder='Enter first number here'/>
         <input name='num2' placeholder='Enter second number'/>
         <button type='submit'>Add</button>
     </form>
