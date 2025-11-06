@@ -1,3 +1,5 @@
 FROM python:3.9
-COPY app.py /app.py
-CMD ["python3", "/app.py", "runserver", 0.0.0.0:8000]
+WORKDIR /app
+COPY . .
+RUN pip install -r requirements.txt
+CMD ["python3", "app.py"]
